@@ -297,3 +297,101 @@ img {
     gap: 6px;
   }
 }
+
+/* CORREÇÃO DE IMAGENS */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 991px) {
+
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+
+  .logo {
+    max-height: 160px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .hero-inner h2 {
+    font-size: clamp(26px, 6vw, 40px);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  /* QUEBRA DO GRID QUEM SOMOS */
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  /* NAV MOBILE */
+  .main-nav ul {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    min-height: 320px;
+    background-position: center;
+  }
+
+  .hero-inner {
+    padding: 20px;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 40px 0;
+  }
+
+  /* FORMULÁRIOS */
+  .orcamento .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* EXTRA PEQUENO (CELULAR MENOR) */
+@media (max-width: 480px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .hero-inner h2 {
+    font-size: 24px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
