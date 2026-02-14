@@ -102,16 +102,24 @@
             </div>
         </section>
 
-        <form id="orcamento" action="https://formspree.io/f/xrelzjgn" method="POST" class="section orcamento">
-            <input type="text" name="nome" placeholder="Nome completo*" required>
-            <input type="email" name="email" placeholder="E-mail*" required>
-            <input type="text" name="empresa" placeholder="Nome da empresa">
+       <section id="orcamento" class="section">
+    <div class="contact-grid">
+        <div class="contact-card card">
+            <h4>Solicite um Orçamento</h4>
+            <p>Preencha os dados abaixo e retornaremos o mais rápido possível.</p>
 
-            <input type="tel" name="telefone" placeholder="Telefone" inputmode="numeric" pattern="[0-9()+\s-]+">
+            <form action="https://formspree.io/f/xrelzjgn" method="POST" class="contact-form">
+                <input type="text" name="nome" placeholder="Nome completo*" required>
+                <input type="email" name="email" placeholder="E-mail*" required>
+                <input type="text" name="empresa" placeholder="Nome da empresa">
+                <input type="tel" name="telefone" placeholder="Telefone">
+                <textarea name="mensagem" rows="5" placeholder="Descreva suas necessidades"></textarea>
 
-            <textarea name="mensagem" rows="5" placeholder="Descreva suas necessidades"></textarea>
-            <button class="btn btn-primary" type="submit">Enviar Pedido</button>
-        </form>
+                <button class="btn btn-primary" type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+</section>
 
         <section id="contato" class="section contato">
             <div class="contact-grid">
