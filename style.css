@@ -1,7 +1,8 @@
-/* CSS aprimorado para responsividade total (mobile, tablet e desktop)
-   Tema: moderno preto e dourado — PRISMA Inteligência Contábil
-   Otimizado para qualquer resolução de tela
-*/
+/* ================================
+   PRISMA Inteligência Contábil
+   Tema moderno preto e dourado
+   Responsivo: mobile, tablet, desktop
+================================ */
 
 :root {
   --bg: #0f1113;
@@ -31,12 +32,15 @@ body {
 }
 
 img {
-  max-width: 150%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* TOPBAR */
+/* ================================
+   HEADER
+================================ */
+
 .site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -72,7 +76,7 @@ img {
 
 /* NAVBAR */
 .main-nav {
-  background: #0b0b0b;
+  background: var(--surface);
   padding: 14px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
@@ -100,7 +104,10 @@ img {
   color: var(--gold);
 }
 
-/* HERO */
+/* ================================
+   HERO
+================================ */
+
 .hero {
   position: relative;
   height: 60vh;
@@ -125,16 +132,13 @@ img {
   position: relative;
   text-align: center;
   max-width: 850px;
-  color: #fff;
   z-index: 2;
 }
 
 .hero-inner h2,
 .hero-inner p {
-  color: #fff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
-
 
 .hero h2 {
   font-size: clamp(28px, 5vw, 48px);
@@ -147,6 +151,7 @@ img {
   font-size: clamp(14px, 2vw, 18px);
 }
 
+/* BOTÕES */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -176,7 +181,10 @@ img {
   background: rgba(202, 168, 90, 0.1);
 }
 
-/* CONTAINER */
+/* ================================
+   LAYOUT GERAL
+================================ */
+
 .container {
   max-width: var(--max-width);
   margin: auto;
@@ -194,12 +202,14 @@ img {
 }
 
 .section-sub {
-  color: var(--muted);
-  margin-bottom: 18px;
   color: #ffffffd8;
+  margin-bottom: 18px;
 }
 
-/* ABOUT */
+/* ================================
+   QUEM SOMOS
+================================ */
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -208,18 +218,20 @@ img {
 }
 
 .about p {
-  color: var(--muted);
-  opacity: 0.95;
   color: #ffffffd8;
 }
 
-/* SERVICES */
+/* ================================
+   SERVIÇOS
+================================ */
+
 .services .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
+/* CARD PADRÃO */
 .card {
   background: rgba(255, 255, 255, 0.05);
   padding: 20px;
@@ -232,174 +244,50 @@ img {
   color: #e6c16b;
 }
 
-/* ORÇAMENTO */
-.orcamento .form-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
-}
+/* ================================
+   ORÇAMENTO + CONTATO (UNIFICADO)
+================================ */
 
-.orcamento input,
-.orcamento textarea {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(202, 168, 90, 0.2);
-  color: white;
-  padding: 12px;
-  border-radius: 8px;
-}
-
-.orcamento button {
-  grid-column: 1 / -1;
-}
-
-/* CONTATO */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
-/* FOOTER */
-.site-footer {
-  background: #0d0d0d;
-  padding: 30px;
-  margin-top: 40px;
+/* FORMULÁRIOS PADRÃO */
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(202, 168, 90, 0.2);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 12px;
+  transition: 0.2s;
 }
 
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: var(--max-width);
-  margin: auto;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 1px rgba(202, 168, 90, 0.3);
 }
 
-.footer-copy {
-  color: var(--muted);
-  font-size: 14px;
+/* BOTÃO OCUPA LARGURA */
+.contact-form button {
+  width: 100%;
 }
 
-/* MOBILE AJUSTES */
-@media (max-width: 768px) {
-  .hero {
-    height: 50vh;
-  }
-
-  .logo {
-    max-height: 140px;
-  }
-
-  .topbar {
-    flex-direction: column;
-    text-align: center;
-    gap: 6px;
-  }
-}
-
-/* CORREÇÃO DE IMAGENS */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* RESPONSIVIDADE GERAL */
-@media (max-width: 991px) {
-
-  .topbar {
-    flex-direction: column;
-    text-align: center;
-    gap: 6px;
-  }
-
-  .logo {
-    max-height: 160px;
-  }
-
-  .hero {
-    height: auto;
-    padding: 50px 20px;
-  }
-
-  .hero-inner h2 {
-    font-size: clamp(26px, 6vw, 40px);
-  }
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-  /* QUEBRA DO GRID QUEM SOMOS */
-  .about {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .about-image img {
-    max-width: 220px;
-    margin: 0 auto;
-  }
-
-  /* NAV MOBILE */
-  .main-nav ul {
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-
-  /* HERO */
-  .hero {
-    height: auto;
-    min-height: 320px;
-    background-position: center;
-  }
-
-  .hero-inner {
-    padding: 20px;
-  }
-
-  /* SECTIONS */
-  .section {
-    padding: 40px 0;
-  }
-
-  /* FORMULÁRIOS */
-  .orcamento .form-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* FOOTER */
-  .footer-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-/* EXTRA PEQUENO (CELULAR MENOR) */
-@media (max-width: 480px) {
-
-  body {
-    font-size: 15px;
-  }
-
-  .hero-inner h2 {
-    font-size: 24px;
-  }
-
-  .btn {
-    padding: 10px 20px;
-    font-size: 15px;
-  }
-}
+/* ================================
+   REDES SOCIAIS
+================================ */
 
 .socials {
   display: flex;
   gap: 12px;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .socials a {
@@ -423,4 +311,100 @@ img {
 .socials i {
   font-size: 18px;
   color: var(--gold);
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.site-footer {
+  background: #0d0d0d;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: var(--max-width);
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-copy {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 991px) {
+  .hero {
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .hero-inner h2 {
+    font-size: clamp(26px, 6vw, 40px);
+  }
+
+  .logo {
+    max-height: 160px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  .hero-inner h2 {
+    font-size: 24px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
 }
