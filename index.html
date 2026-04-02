@@ -9,17 +9,17 @@
         content="PRISMA Inteligência Contábil — soluções claras e inteligentes para sua empresa." />
     <link rel="stylesheet" href="style.css">
 
-        <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18011994063"></script>
     <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-       gtag('config', 'AW-18011994063');
-</script>
+        gtag('config', 'AW-18011994063');
+    </script>
 </head>
-   
+
 <body>
     <header class="site-header">
         <div class="topbar">
@@ -32,7 +32,6 @@
 
         <div class="brand-wrap">
             <img src="PRISMA LOGO.svg" alt="PRISMA Inteligência Contábil" class="logo">
-
         </div>
 
         <nav class="main-nav">
@@ -41,7 +40,7 @@
                 <li><a href="#quem-somos">Quem Somos</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#orcamento">Orçamento</a></li>
-                <li><a href="#contato">Contato</a></li>>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -64,14 +63,8 @@
             <div class="about-text">
                 <h3>Quem somos</h3>
                 <p>Somos uma contabilidade que nasceu para transformar o mundo contábil, fiscal e pessoal em algo
-                    transparente e
-                    objetivo. Com paixão pelos detalhes e compromisso com a exatidão, ajudamos nossos clientes a navegar
-                    pelas
-                    obrigações fiscais com confiança e tranquilidade. Nossa missão é desmistificar conceitos complexos e
-                    traduzir
-                    a contabilidade em soluções claras, para que você foque no crescimento do seu negócio. Aqui, a
-                    tecnologia
-                    encontra o cuidado humano para oferecer um serviço único e personalizado.</p>
+                    transparente e objetivo. Com paixão pelos detalhes e compromisso com a exatidão, ajudamos nossos clientes a navegar
+                    pelas obrigações fiscais com confiança e tranquilidade.</p>
             </div>
             <div class="about-image">
                 <img src="PRISMA LOGO.svg" alt="PRISMA">
@@ -80,85 +73,58 @@
 
         <section id="servicos" class="section services">
             <h3>Nossos Serviços</h3>
-            <p class="section-sub">Atendemos micro, pequenas e grandes empresas com soluções contábeis que unem
-                tecnologia,
-                conformidade e desempenho.</p>
+            <p class="section-sub">Atendemos micro, pequenas e grandes empresas com soluções contábeis.</p>
+
             <div class="cards">
                 <article class="card">
                     <h4>Contabilidade Empresarial</h4>
-                    <p>Escrituração, fechamento contábil e demonstrações financeiras claras para sua tomada de decisão.
-                    </p>
+                    <p>Escrituração e relatórios para tomada de decisão.</p>
                 </article>
+
                 <article class="card">
                     <h4>Folha de Pagamento</h4>
-                    <p>Processamento da folha, encargos e gestão de admissões/demisões com conformidade.</p>
+                    <p>Gestão completa da folha e encargos.</p>
                 </article>
+
                 <article class="card">
                     <h4>Consultoria Tributária</h4>
-                    <p>Planejamento e análise de regimes para reduzir impostos de forma legal e segura.</p>
+                    <p>Reduza impostos com segurança.</p>
                 </article>
+
                 <article class="card">
-                    <h4>Abertura e Regularização</h4>
-                    <p>Abertura de empresas, alterações contratuais e regularizações junto aos órgãos competentes.</p>
-                </article>
-                <article class="card">
-                    <h4>Gestão de Obrigações</h4>
-                    <p>Controle de prazos e entrega de declarações como SPED, DCTF e demais obrigações.</p>
-                </article>
-                <article class="card">
-                    <h4>Relatórios e BI</h4>
-                    <p>Dashboards e relatórios com indicadores práticos para monitorar seu desempenho.</p>
+                    <h4>Abertura de Empresa</h4>
+                    <p>Abra seu CNPJ sem dor de cabeça.</p>
                 </article>
             </div>
         </section>
 
-       <section id="orcamento" class="section">
-    <div class="contact-grid">
-        <div class="contact-card card">
-            <h4>Solicite um Orçamento</h4>
-            <p>Preencha os dados abaixo e retornaremos o mais rápido possível.</p>
+        <!-- FORMULÁRIO COM CONVERSÃO -->
+        <section id="orcamento" class="section">
+            <div class="contact-grid">
+                <div class="contact-card card">
+                    <h4>Solicite um Orçamento</h4>
+                    <p>Preencha os dados abaixo e retornaremos o mais rápido possível.</p>
 
-            <form action="https://formspree.io/f/xrelzjgn" method="POST" class="contact-form">
-                <input type="text" name="nome" placeholder="Nome completo*" required>
-                <input type="email" name="email" placeholder="E-mail*" required>
-                <input type="text" name="empresa" placeholder="Nome da empresa">
-                <input type="tel" name="telefone" placeholder="Telefone">
-                <textarea name="mensagem" rows="5" placeholder="Descreva suas necessidades"></textarea>
+                    <form id="form-orcamento" action="https://formspree.io/f/xrelzjgn" method="POST" class="contact-form">
+                        <input type="text" name="nome" placeholder="Nome completo*" required>
+                        <input type="email" name="email" placeholder="E-mail*" required>
+                        <input type="text" name="empresa" placeholder="Nome da empresa">
+                        <input type="tel" name="telefone" placeholder="Telefone">
+                        <textarea name="mensagem" rows="5" placeholder="Descreva suas necessidades"></textarea>
 
-                <button class="btn btn-primary" type="submit">Enviar Pedido</button>
-            </form>
-        </div>
-    </div>
-</section>
+                        <button class="btn btn-primary" type="submit">Enviar Pedido</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
         <section id="contato" class="section contato">
             <div class="contact-grid">
                 <div class="contact-card card">
                     <h4>Fale conosco</h4>
-                    <p>📞 (48) 99150-5789<br>🕓 Seg a Sex, 8h30 às 17h30<br>✉ fiscal@prismainteligenciacontabil.com</p>
-                    <div class="socials">
-                        <a href="https://wa.me/5548991505789" target="_blank">
-                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/SEU-LINK-AQUI" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i> LinkedIn
-                        </a>
-                    </div>
-                    <form class="contact-form card" action="https://formspree.io/f/xrelzjgn" method="POST">
-                        <input type="text" name="nome" placeholder="Seu nome*" required>
-
-                        <input type="email" name="email" placeholder="Seu e-mail*" required>
-
-                        <input type="text" name="empresa" placeholder="Empresa">
-
-                        <textarea name="mensagem" rows="6" placeholder="Como podemos ajudar?" required></textarea>
-
-                        <button class="btn btn-primary" type="submit">
-                            Enviar Mensagem
-                        </button>
-                    </form>
+                    <p>📞 (48) 99150-5789<br>✉ fiscal@prismainteligenciacontabil.com</p>
                 </div>
+            </div>
         </section>
     </main>
 
@@ -167,9 +133,18 @@
             <div class="footer-brand">
                 <img src="PRISMA LOGO.svg" alt="PRISMA" class="footer-logo">
             </div>
-            <div class="footer-copy">© PRISMA Inteligência Contábil — Todos os direitos reservados</div>
+            <div class="footer-copy">© PRISMA Inteligência Contábil</div>
         </div>
     </footer>
-</body>
 
+    <!-- SCRIPT DE CONVERSÃO -->
+    <script>
+        document.getElementById('form-orcamento').addEventListener('submit', function () {
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18011994063/SEU_LABEL_AQUI'
+            });
+        });
+    </script>
+
+</body>
 </html>
